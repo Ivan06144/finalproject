@@ -83,3 +83,64 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+
+
+
+
+  function viewDetails(url) {
+    window.location.href = url;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*搜索條*/
+function searchProducts() {
+  const query = document.getElementById('searchBar').value.toLowerCase();
+  const productElements = document.querySelectorAll('.product');
+  productElements.forEach(productElement => {
+      const productName = productElement.querySelector('h3').textContent.toLowerCase();
+      productElement.style.display = productName.includes(query) ? 'block' : 'none';
+  });
+}
+
+
+
+
+/*header 換圖*/
+
+const images = [
+  'url(img/headerback2.jpg)',
+  'url(img/headerback3.jpg)',
+  'url(img/headerback4.jpg)'
+];
+
+const header = document.getElementById('dynamicPic');
+let currentIndex = 0;
+
+function changeBackground() {
+  header.style.backgroundImage = images[currentIndex];
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+setInterval(changeBackground, 5000);
+changeBackground();
+
+    

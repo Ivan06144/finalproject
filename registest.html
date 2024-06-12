@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styles for form beautification */
+        .formback {
+           width: 550px;
+            margin: auto;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+        .formback form {
+            display: flex;
+            flex-direction: column;
+        }
+        .formback h1 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #333;
+        }
+        .formback label {
+            margin: 0.5em 0 0.2em;
+            font-weight: bold;
+        }
+        .formback input[type="text"],
+        .formback input[type="phone"],
+        .formback input[type="password"] {
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .formback input[type="submit"] {
+            padding: 0.7em;
+            border: none;
+            border-radius: 5px;
+            background-color: #f56363;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .formback input[type="submit"]:hover {
+            background-color: #e35353;
+        }
+    </style>
+</head>
+<body>
+    <!-- heaeder -->
+    <header class="head">
+        <a href="#" class="logo">SWEEEEETY! 糖果零食專賣</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="text" id="searchBar" placeholder="快速查找商品" onkeyup="searchProducts()">
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/img1.jpg" alt="">
+                <div class="content">
+                    <h3>candy1</h3>
+                    <span class="price">＄100元</span>
+                    <span class="number">數量:1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/img2.jpg" alt="">
+                <div class="content">
+                    <h3>candy2</h3>
+                    <span class="price">＄100元</span>
+                    <span class="number">數量:2</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/img3.jpg" alt="">
+                <div class="content">
+                    <h3>candy3</h3>
+                    <span class="price">＄130元</span>
+                    <span class="number">數量:1</span>
+                </div>
+            </div>
+            <div class="total">總計:＄430元</div>
+            <a href="#" class="btn">確認</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>現在登入</h3>
+            <input type="email" placeholder="輸入email" class="box">
+            <input type="password" placeholder="輸入密碼" class="box">
+            <p>忘記密碼 <a href="#">按這裡</a></p>
+            <p>沒有帳號 <a href="#">現在建立</a></p>
+            <input type="submit" value="送出" class="btn">
+        </form>
+    </header>
+
+
+   
+   <section class="home" id="dynamicPic">
+    
+    <div class="formback" style="background-color: rgb(245, 84, 31);" >
+        <form action="#" method="post">
+            <h1 class="title1" >創辦您的帳號!</h1>
+            <label for="username">帳號名稱</label>
+            <input type="text" id="username" name="username" placeholder="請輸入使用者名稱">
+            <br>
+            <label for="address">居住地址</label>
+            <input type="text" id="address" name="address" placeholder="請輸入居住地址">
+            <br>
+            <label for="email">手機電話</label>
+            <input type="phone" id="phone" name="phone" placeholder="請輸入手機號碼">
+            <br>
+            <label for="password">密碼</label>
+            <input type="password" id="password" name="password" placeholder="請輸入密碼">
+            <br>
+            <label for="checkPassword">確認密碼</label>
+            <input type="password" id="checkPassword" name="checkPassword" placeholder="請再次輸入密碼">
+            <br>
+            <br>
+            <input type="submit" onclick="submitForm()" value="註冊">
+        </form>
+    </div>
+    
+
+       <div style="background-image: url(i);">
+
+       </div>
+
+
+
+
+       <div>
+        <img src="img/registerbb.png">
+               </div>
+
+    </section>
+
+   
+    
+
+       
+
+    
+
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>candy shop</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, maiores?</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>聯絡我們</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>(+886)-02-2789-4567</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>j91032@gmial.com</a>
+            </div>
+            <div class="box">
+                <h3>隨時獲得新資訊</h3>
+                <p>追蹤以便及時獲得新資訊</p>
+                <input type="email" placeholder="您的電子郵件" class="email">
+                <input type="submit" value="追蹤" class="btn">
+                <img src="" class="payment-img" alt="">
+            </div>
+        </div>
+
+        <div class="credit">create by <span>ivan lin</span>  all rights reserved</div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    
+    
+
+
+</body>
+</html>
