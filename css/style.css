@@ -476,65 +476,6 @@ section{
     font-size: 1.7rem;
 }
 
-
-
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-
-.blogs .box-container .box{
-    overflow: hidden;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    background: #fff;
-}
-
-.blogs .box-container .box img{
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-.blogs .box-container .box .content{
-    padding: 2rem;
-}
-
-.blogs .box-container .box .content .icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1rem;
-    border-bottom: var(--border);
-}
-
-.blogs .box-container .box .content .icons a{
-    color: var(--light-color);
-    font-size: inherit;
-}
-
-.blogs .box-container .box .content .icons a i{
-    color: var(--orange);
-    padding-right: .5rem;
-}
-
-.blogs .box-container .box .content h3{
-    line-height: 1.8;
-    color: var(--black);
-    font-size: 2.2rem;
-    padding: .5rem 0;
-}
-
-.blogs .box-container .box .content p{
-    line-height: 1.8;
-    color: var(--light-color);
-    font-size: 1.5rem;
-    padding: .5rem 0;
-}
-
 .footer{
     background: #fff;
 }
@@ -625,6 +566,51 @@ section{
 .footer .credit span{
     color: var(--orange);
 }
+
+
+.formback {
+    width: 550px;
+     margin: auto;
+     padding: 2em;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     background: #fff;
+ }
+ .formback form {
+     display: flex;
+     flex-direction: column;
+ }
+ .formback h1 {
+     text-align: center;
+     margin-bottom: 1em;
+     color: #333;
+ }
+ .formback label {
+     margin: 0.5em 0 0.2em;
+     font-weight: bold;
+ }
+ .formback input[type="text"],
+ .formback input[type="phone"],
+ .formback input[type="password"] {
+     padding: 0.5em;
+     margin-bottom: 1em;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 1em;
+ }
+ .formback input[type="submit"] {
+     padding: 0.7em;
+     border: none;
+     border-radius: 5px;
+     background-color: #f56363;
+     color: white;
+     font-size: 1em;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+ .formback input[type="submit"]:hover {
+     background-color: #e35353;
+ }
 
 
 
