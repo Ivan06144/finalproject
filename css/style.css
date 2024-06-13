@@ -274,7 +274,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
@@ -296,7 +295,7 @@ section{
 }
 
 .home .content p{
-    color: var(--light-color);
+    color: var(--black);
     font-size: 1.7rem;
     padding: 1rem 0;
     line-height: 1.8;
@@ -304,7 +303,7 @@ section{
 
 .features .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* 列數自動適應，每列最小30rem寬，自動填充空間 */
     gap: 1.5rem;
 }
 
@@ -322,10 +321,7 @@ section{
     outline-offset: 0rem;
 }
 
-.features .box-container .box img{
-    margin: 1rem 0;
-    height: 15rem;
-}
+
 
 .features .box-container .box h3{
     font-size: 2.5rem;
@@ -546,11 +542,6 @@ section{
     font-size: 1.6rem;
     color: var(--black);
     text-transform: none;
-}
-
-.footer .box-container .box .payment-img{
-    margin-top: 2rem;
-    height: 3rem;
 }
 
 .footer .credit{
