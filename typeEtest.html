@@ -79,22 +79,24 @@
 
     
 </section>
+
     <main>
         <div class="product-detail000">
             <div class="product-image000">
-                <img src="img/TypeAcandy.jpg" alt="TypeA Candy 1">
+                <img src="img/img6.jpg" alt="TypeA Candy 1">
             </div>
 
                 <div class="product-info000">
-                    <h1>荷蘭激酸軟糖 </h1>
-                    <p style="color: orange;">$45</p>
-                    <h4>商品介紹:源自 #荷蘭 的激酸軟糖 ，風行歐洲三十年，激酸的味蕾絕對刺激你的唾腺，唾液充滿口腔，滑過舌尖與軟糖相融，讓果香在口中釋放，無聊的時候，想睡覺的時候，肚子餓的時候，就來一片荷蘭激酸 #酸扁帶</h4>
+                    <h1>草莓奶油硬糖</h1>
+                    <p style="color: red;">$250</p>
+                    <h4>商品介紹:
+                        同時享受水果酸甜與牛奶醇香，一粒就能體驗兩種口感和風味的糖果。使用福岡縣產的“草莓之王”的草莓果汁，享受草莓的酸味和牛奶的調和。</h4>
                     <div class="quantity000">
                         <!--傳送購物資訊實驗1-->
 
                 <div class="formcolor" style="background-color: rgb(227, 223, 216);">
                     <h1>商品選購</h1>
-                    <form id="numberForm" action="cartA.html" method="get">
+                    <form id="numberForm"  action="cartE.html" method="get">
                         <label for="number">請選購商品數量：</label>
                         <input type="number" id="number" name="number" required>
                         <button type="submit" class="button000">送出訂單</button>
@@ -114,7 +116,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p>很讚喔，這款糖超好吃的，已經第三次回購了。老闆出貨也挺快的!</p>
+                        <p>超讚的出貨速度，超讚的商品品質，超讚的CP值，超讚的服務，包裝非常完整，喜歡會再回購。</p>
                     </div>
 
                     <div class="swiper-slide box">
@@ -127,10 +129,20 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
-                            <p>老闆出貨速度快，商品本身品質良好，還會再來買!</p>
+                            <p>	2019-03-02
+                                真的超級喜歡，非常支持，質量非常好，與賣家描述的完全一致，非常滿意,真的很喜歡，完全超出期望值，發貨速度非常快，包裝非常仔細、嚴實</p>
                         </div>
                     </div>
 
+
+
+
+
+
+
+
+
+                    
 
 
 
@@ -146,40 +158,36 @@
                                 return;
                             }
                             
-                            let result = number * 19.9;
-                            window.location.href = `cartA.html?number=${encodeURIComponent(number)}&result=${encodeURIComponent(result)}`;
+                            let result = number * 49;
+                            window.location.href = `cartE.html?number=${encodeURIComponent(number)}&result=${encodeURIComponent(result)}`;
                         };
                     </script>
+
 
                 </div>
                
 
             </div>
-    <!--留言區-->
-    <div class="comment-box">
-        <h2>留言板</h2>
-        <form id="commentForm">
-            <label for="username">用戶名:</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="comment">留言:</label>
-            <textarea id="comment" name="comment" rows="4" required></textarea>
-            
-            <button type="submit">提交</button>
-        </form>
+
+
+
+
+            <!--留言區-->
+<div class="comment-box">
+    <h2>留言板</h2>
+    <form id="commentForm">
+        <label for="username">用戶名:</label>
+        <input type="text" id="username" name="username" required>
         
-    </div>
-
-
-
-
-
+        <label for="comment">留言:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        
+        <button type="submit">提交</button>
+    </form>
+    
+</div>
         </div>
     </main>
-
-
-
-
 
     <section class="footer">
 
@@ -219,6 +227,6 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

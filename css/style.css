@@ -428,6 +428,11 @@ section{
     padding: 1rem 0;
 }
 
+.review {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .review .review-slider{
     padding: 1rem;
 }
@@ -441,6 +446,11 @@ section{
     outline: var(--outline);
     box-shadow: var(--box-shadow);
     transition: .2s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .review .review-slider .box:hover{
@@ -449,8 +459,8 @@ section{
 }
 
 .review .review-slider .box img{
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
 }
 
@@ -700,7 +710,7 @@ section{
 .product-detail000 {
     display: flex;
     gap: 2rem;
-    background: rgb(181, 246, 117);
+    background: rgb(249, 247, 139);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -750,7 +760,7 @@ section{
 
 .product111{
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -768,8 +778,175 @@ section{
     margin-bottom: 10px;
   }
 
+  
 
 
+
+
+  /*會員個人介面*/
+.member-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.member-sidebar {
+    width: 250px;
+    background: #f4ca68;
+    color: #fff;
+    padding: 2rem;
+}
+
+.member-sidebar h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.member-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.member-sidebar ul li {
+    margin: 1rem 0;
+}
+
+.member-sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.member-sidebar ul li a:hover {
+    background: #575757;
+}
+
+.member-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
+
+.content-section h2 {
+    margin-top: 0;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: not-allowed;
+    border-radius: 4px;
+}
+
+.order-list .order {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+}
+
+
+
+
+/*留言框*/
+
+.comment-box {
+    background: rgb(250, 245, 245);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+   
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.comment-box h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.comment-box label {
+    display: block;
+    margin-top: 10px;
+}
+
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-box button:hover {
+    background-color: #4cae4c;
+}
+
+#commentSection {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
 
 
 

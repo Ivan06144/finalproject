@@ -79,22 +79,25 @@
 
     
 </section>
+
     <main>
         <div class="product-detail000">
             <div class="product-image000">
-                <img src="img/TypeAcandy.jpg" alt="TypeA Candy 1">
+                <img src="img/kitkat.jpg" alt="TypeA Candy 1">
             </div>
 
                 <div class="product-info000">
-                    <h1>荷蘭激酸軟糖 </h1>
-                    <p style="color: orange;">$45</p>
-                    <h4>商品介紹:源自 #荷蘭 的激酸軟糖 ，風行歐洲三十年，激酸的味蕾絕對刺激你的唾腺，唾液充滿口腔，滑過舌尖與軟糖相融，讓果香在口中釋放，無聊的時候，想睡覺的時候，肚子餓的時候，就來一片荷蘭激酸 #酸扁帶</h4>
+                    <h1>Kit-Kat</h1>
+                    <p style="color: red;">$250</p>
+                    <h4>商品介紹:
+                        酥脆的威化餅與牛奶巧克力完美的結合。
+                        口感香濃、更酥脆，讓人一吃就上癮。</h4>
                     <div class="quantity000">
                         <!--傳送購物資訊實驗1-->
 
                 <div class="formcolor" style="background-color: rgb(227, 223, 216);">
                     <h1>商品選購</h1>
-                    <form id="numberForm" action="cartA.html" method="get">
+                    <form id="numberForm" action="cartC.html" method="get">
                         <label for="number">請選購商品數量：</label>
                         <input type="number" id="number" name="number" required>
                         <button type="submit" class="button000">送出訂單</button>
@@ -127,7 +130,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
-                            <p>老闆出貨速度快，商品本身品質良好，還會再來買!</p>
+                            <p>賣家寄貨超快速，年前收到真好！</p>
                         </div>
                     </div>
 
@@ -146,13 +149,20 @@
                                 return;
                             }
                             
-                            let result = number * 19.9;
-                            window.location.href = `cartA.html?number=${encodeURIComponent(number)}&result=${encodeURIComponent(result)}`;
+                            let result = number * 59;
+                            window.location.href = `cartC.html?number=${encodeURIComponent(number)}&result=${encodeURIComponent(result)}`;
                         };
                     </script>
 
+
                 </div>
                
+
+
+                
+
+
+
 
             </div>
     <!--留言區-->
@@ -169,7 +179,6 @@
         </form>
         
     </div>
-
 
 
 
@@ -219,6 +228,6 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

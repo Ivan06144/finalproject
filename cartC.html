@@ -2,20 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candy Shop</title>
+    <title>SWEEEEETY!</title>
     <link rel="icon" href="img/can.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Additional styles for form beautification */
-        
-    </style>
 </head>
 <body>
-    <!-- heaeder -->
+    <!-- Header -->
     <header class="head">
         <a href="#" class="logo">SWEEEEETY!</a>
         <nav class="navbar">
@@ -34,7 +29,8 @@
         </div>
 
         <form action="" class="search-form">
-            <input type="text" id="searchBar" placeholder="快速查找商品" onkeyup="searchProducts()">
+            <input type="search" id="search-box" placeholder="搜尋商品">
+            <label for="search-box" class="fas fa-search"></label>
         </form>
 
         <div class="shopping-cart">
@@ -79,56 +75,39 @@
         </form>
     </header>
 
-
-   
-   <section class="home" id="dynamicPic">
-    
-    <div class="formback" style="background-color: rgb(252, 195, 126);" >
-        <form action="#" method="post">
-            <h1 class="title1" >創辦您的帳號!</h1>
-            <label for="username">帳號名稱</label>
-            <input type="text" id="username" name="username" placeholder="請輸入使用者名稱">
-            <br>
-            <label for="address">居住地址</label>
-            <input type="text" id="address" name="address" placeholder="請輸入居住地址">
-            <br>
-            <label for="email">手機電話</label>
-            <input type="phone" id="phone" name="phone" placeholder="請輸入手機號碼">
-            <br>
-            <label for="password">密碼</label>
-            <input type="password" id="password" name="password" placeholder="請輸入密碼">
-            <br>
-            <label for="checkPassword">確認密碼</label>
-            <input type="password" id="checkPassword" name="checkPassword" placeholder="請再次輸入密碼">
-            <br>
-            <br>
-            <button type="button" class="btn" onclick="viewDetails('account.html')">註冊</button>
-        </form>
-    </div>
-    
-
-       <div style="background-image: url(i);">
-
-       </div>
-
-
-
-
-       <div>
-        <img src="img/registerbb.png">
-               </div>
-
+    <section class="home" id="home">
     </section>
 
-   
-    
+    <div class="product-detail000" style="background-image: url(img/invoiceback.jpg);">
+        <main>
+            <h1>訂單明細</h1>
+            <div id="cart">
+                <h1>選購品項如下:</h1>
+                <h2 id="originalNumber"></h2>
+                <h2 id="result"></h2>
+                <button onclick="window.location.href='typeCtest.html'" class="button000">返回</button>
+            </div>
+        </main>
+    </div>
 
-       
+    <script>
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
 
-    
+        const number = getQueryParameter('number');
+        const result = getQueryParameter('result');
+        if (number && result) {
+            document.getElementById('originalNumber').textContent = `您選購了：${number} 包Kit-Kat巧克力`;
+            document.getElementById('result').textContent = `總金額為：${result}元`;
+        } else {
+            document.getElementById('result').textContent = '並未成功選購，請重試。';
+        }
+    </script>
 
     <section class="footer">
-
+        <div class="credit">create by <span>ivan lin</span>  all rights reserved</div>
         <div class="box-container">
             <div class="box">
                 <h3>SWEEEEETY!</h3>
@@ -138,12 +117,10 @@
                     <a href="#" class="fab fa-instagram"></a>
                 </div>
             </div>
-
             <div class="box">
                 <h3>聯絡我們</h3>
                 <a href="#" class="links"><i class="fas fa-phone"></i>(+886)-02-2789-4567</a>
                 <a href="mailto:j91032@gmail.com" class="links"><i class="fas fa-envelope"></i>j91032@gmail.com</a>
-
             </div>
             <div class="box">
                 <h3>隨時獲得新資訊</h3>
@@ -153,29 +130,8 @@
                 <img src="" class="payment-img" alt="">
             </div>
         </div>
-
-        <div class="credit">create by <span>ivan lin</span>  all rights reserved</div>
-
     </section>
 
-
-
-
-    <script>
-        function viewDetails(url) {
-            window.location.href = url;
-        }
-    </script>
-
-
-
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <script src="js/script.js"></script>
-    
-    
-
-
 </body>
 </html>

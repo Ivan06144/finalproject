@@ -97,9 +97,9 @@
                     <div class="quantity000">
                         <!--傳送購物資訊實驗1-->
 
-                <div class="formcolor" style="background-image: url(img/candtback2.jpg);">
+                <div class="formcolor" style="background-color: rgb(227, 223, 216);">
                     <h1>商品選購</h1>
-                    <form id="numberForm" action="carttest2.html" method="get">
+                    <form id="numberForm" action="cartB.html" method="get">
                         <label for="number">請選購商品數量：</label>
                         <input type="number" id="number" name="number" required>
                         <button type="submit" class="button000">送出訂單</button>
@@ -119,7 +119,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p>很讚喔，這款糖超好吃的，已經第三次回購了。老闆出貨也挺快的!</p>
+                        <p>價廉物美，品質ㄧ極棒，包裝的非常好，非常讚的店家，下一次一定會再回購的。</p>
                     </div>
 
                     <div class="swiper-slide box">
@@ -144,22 +144,41 @@
                         document.getElementById('numberForm').onsubmit = function(event) {
                             event.preventDefault();
                             let number = document.getElementById('number').value;
-                            let result = number * 19.9;
-                            window.location.href = `carttest2.html?number=${encodeURIComponent(number)}&result=${encodeURIComponent(result)}`;
+                            
+                            // 檢查數字是否為正整數
+                            if (!Number.isInteger(Number(number)) || Number(number) <= 0) {
+                                alert("請輸入一個正整數。");
+                                return;
+                            }
+                            
+                            let result = number * 250;
+                            window.location.href = `cartB.html?number=${encodeURIComponent(number)}&result=${encodeURIComponent(result)}`;
                         };
                     </script>
+                    
 
 
                 </div>
                
 
-
-                
-
-
-
-
             </div>
+    <!--留言區-->
+    <div class="comment-box">
+        <h2>留言板</h2>
+        <form id="commentForm">
+            <label for="username">用戶名:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="comment">留言:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            
+            <button type="submit">提交</button>
+        </form>
+        
+    </div>
+
+
+
         </div>
     </main>
 

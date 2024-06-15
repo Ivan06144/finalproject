@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candy Shop</title>
+    <title>SWEEEEETY!</title>
     <link rel="icon" href="img/can.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Additional styles for form beautification */
-        
-    </style>
 </head>
 <body>
     <!-- heaeder -->
@@ -24,6 +20,7 @@
             <a href="#products">主打商品</a>
             <a href="#categories">商品分類</a>
             <a href="#review">顧客反饋</a>
+
         </nav>
 
         <div class="icons">
@@ -74,56 +71,83 @@
             <input type="email" placeholder="輸入email" class="box">
             <input type="password" placeholder="輸入密碼" class="box">
             <p>忘記密碼 <a href="#">按這裡</a></p>
-            <p>沒有帳號 <a href="#">現在建立</a></p>
+            <p>沒有帳號 <a href="registest.html">現在建立</a></p>
             <input type="submit" value="送出" class="btn">
         </form>
     </header>
 
+    <section class="home" id="dynamicPic">
 
-   
-   <section class="home" id="dynamicPic">
+
     
-    <div class="formback" style="background-color: rgb(252, 195, 126);" >
-        <form action="#" method="post">
-            <h1 class="title1" >創辦您的帳號!</h1>
-            <label for="username">帳號名稱</label>
-            <input type="text" id="username" name="username" placeholder="請輸入使用者名稱">
-            <br>
-            <label for="address">居住地址</label>
-            <input type="text" id="address" name="address" placeholder="請輸入居住地址">
-            <br>
-            <label for="email">手機電話</label>
-            <input type="phone" id="phone" name="phone" placeholder="請輸入手機號碼">
-            <br>
-            <label for="password">密碼</label>
-            <input type="password" id="password" name="password" placeholder="請輸入密碼">
-            <br>
-            <label for="checkPassword">確認密碼</label>
-            <input type="password" id="checkPassword" name="checkPassword" placeholder="請再次輸入密碼">
-            <br>
-            <br>
-            <button type="button" class="btn" onclick="viewDetails('account.html')">註冊</button>
-        </form>
-    </div>
     
 
-       <div style="background-image: url(i);">
+        <div class="content">
+            <h3>歡迎蒞臨<span>甜食樂園!</span></h3>
+            <P>
+            很高興您成為了我們的會員!!!
 
-       </div>
 
 
 
-
-       <div>
-        <img src="img/registerbb.png">
-               </div>
+            </P>
+                <a href="#" class="btn">手刀下單</a>
+        </div>
 
     </section>
 
-   
-    
+    <!-- 產品特色 -->
 
-       
+   
+
+
+
+
+    <div class="member-container">
+        <div class="member-sidebar">
+            <h1>會員中心</h1>
+            <ul>
+                <li><a href="#profile"><h2>會員資訊</h2></a></li>
+                <li><a href="#orders"><h2>訂單記錄</h2></a></li>
+               <!-- <li><a href="#password">更新密碼</a></li>-->
+            </ul>
+        </div>
+        <div class="member-content">
+            <section id="profile" class="content-section">
+                <h2>會員資訊</h2>
+                <div class="profile-picture">
+                    <img src="img/face.webp" alt="大頭貼">
+                </div>
+                <form id="profileForm">
+                    <label for="username">用戶名:</label>
+                    <input type="text" id="username" name="username" value="張小明" readonly>
+                    
+                  
+                    <label for="phone">電話號碼:</label>
+                    <input type="tel" id="phone" name="phone" value="0912345678" readonly>
+                    <label for="address">地址:</label>
+                    <input type="text" id="address" name="address" value="台北市中正區忠孝東路100號" readonly>
+                    <button type="button" >更新資訊</button>
+                </form>
+            </section>
+            <section id="orders" class="content-section">
+                <h2>訂單記錄</h2>
+                <div class="order-list">
+                    <div class="order">
+                        <h3>訂單#12345</h3>
+                        <p>日期: 2023-06-01</p>
+                        <p>狀態: 已完成</p>
+                    </div>
+                    <div class="order">
+                        <h3>訂單#12346</h3>
+                        <p>日期: 2023-06-10</p>
+                        <p>狀態: 處理中</p>
+                    </div>
+                </div>
+            </section>
+           
+        </div>
+    </div>
 
     
 
@@ -142,8 +166,7 @@
             <div class="box">
                 <h3>聯絡我們</h3>
                 <a href="#" class="links"><i class="fas fa-phone"></i>(+886)-02-2789-4567</a>
-                <a href="mailto:j91032@gmail.com" class="links"><i class="fas fa-envelope"></i>j91032@gmail.com</a>
-
+                <a href="#" class="links"><i class="fas fa-envelope"></i>j91032@gmial.com</a>
             </div>
             <div class="box">
                 <h3>隨時獲得新資訊</h3>
@@ -161,21 +184,43 @@
 
 
 
-    <script>
-        function viewDetails(url) {
-            window.location.href = url;
-        }
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 
 
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="js/script.js"></script>
-    
-    
+    <script src="js/script.js">
 
-
+    </script>
 </body>
 </html>
